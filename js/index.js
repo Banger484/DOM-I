@@ -49,8 +49,7 @@ button.textContent = "Get Started"
 const topImg = document.querySelector('#cta-img');
 topImg.src = "img/header-img.png";
 
-const navLinks = document.querySelectorAll('a');
-navLinks[0].style.color = 'green';
+
 //
 
 const links = document.querySelectorAll('nav a');
@@ -100,3 +99,6 @@ const stuffLink = document.createElement('a');
 stuffLink.textContent = 'Stuff';
 stuffLink.href = '#';
 document.querySelector('nav').prepend(stuffLink);
+
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(navLinks => navLinks.style.color = "green");
